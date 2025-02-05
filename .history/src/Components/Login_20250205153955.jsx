@@ -46,20 +46,20 @@ const Login = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 type="email"
                 placeholder="Enter your email"
-                className="bg-gray-300 w-[60%] border-2 p-4 rounded-xl text-2xl"
+                className="bg-gray-300 w-[60%] outline-none p-4 rounded-xl text-4xl"
               />
             </div>
-            <div className="w-full flex justify-center  items-center bg- gray-800 p-2 rounded-xl gap-2">
+            <div className="w-full flex justify-center items-center bg- gray-800 p-2 rounded-xl gap-2">
               <input
                 onChange={(e) => setPassword(e.target.value)}
                 type="password"
                 placeholder="Enter your password"
-                className="bg-gray-300 w-[60%] border-2 p-4 rounded-xl text-2xl"
+                className="bg-gray-300 w-[60%] outline-none p-4 rounded-xl text-2xl"
               />
             </div>
             <button
               onClick={login}
-              className="w-[15%] p-4 bg-blue-600 text-white text-2xl rounded-xl mt-5 cursor-pointer"
+              className="w-[15%] p-5 bg-blue-600 text-white text-2xl rounded-xl mt-5 cursor-pointer"
             >
               Login
             </button>

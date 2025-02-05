@@ -4,6 +4,9 @@ import { Route, Routes } from "react-router-dom";
 import Login from "./Components/Login.jsx";
 import Home from "./Components/Home.jsx";
 import Details from "./Components/Details.jsx";
+import About from "./Components/About.jsx";
+import Services from "./Components/Services.jsx";
+import Contact from "./Components/Contact.jsx";
 import Addproducts from "./Components/Addproducts.jsx";
 import ShowProducts from "./Components/ShowProducts.jsx";
 

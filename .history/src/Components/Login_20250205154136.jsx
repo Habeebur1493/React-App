@@ -49,12 +49,12 @@ const Login = () => {
                 className="bg-gray-300 w-[60%] border-2 p-4 rounded-xl text-2xl"
               />
             </div>
-            <div className="w-full flex justify-center  items-center bg- gray-800 p-2 rounded-xl gap-2">
+            <div className="w-full flex justify-center border-2 items-center bg- gray-800 p-2 rounded-xl gap-2">
               <input
                 onChange={(e) => setPassword(e.target.value)}
                 type="password"
                 placeholder="Enter your password"
-                className="bg-gray-300 w-[60%] border-2 p-4 rounded-xl text-2xl"
+                className="bg-gray-300 w-[60%]  p-4 rounded-xl text-2xl"
               />
             </div>
             <button

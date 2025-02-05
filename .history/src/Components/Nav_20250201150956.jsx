@@ -3,11 +3,11 @@ import { ProductContext } from "./utils/Context";
 import { Link } from "react-router-dom";
 
 const Nav = ({ setSelectedCategory, setSearchQuery }) => {
-  const { products } = useContext(ProductContext) || []; 
+  const { products } = useContext(ProductContext) || []; // Safe fallback
 
   const [query, setQuery] = useState("");
 
-  
+  // Optimized Category Extraction
   // const category = [...new Set(products.map((p) => p.category))];
   const category = Array.isArray(products)
     ? [...new Set(products.map((p) => p.category))]
@@ -15,13 +15,13 @@ const Nav = ({ setSelectedCategory, setSearchQuery }) => {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
-    
-    window.location.replace("/"); 
+    // Use navigate instead of reload for better SPA behavior
+    window.location.replace("/"); // or use navigate('/') if using React Router v6
   };
 
-  
+  // Reset Category filter when "Add Product" is clicked
   const handleAddProduct = () => {
-    setSelectedCategory(""); 
+    setSelectedCategory(""); // Reset category filter
   };
 
   return (
@@ -30,7 +30,7 @@ const Nav = ({ setSelectedCategory, setSearchQuery }) => {
       <nav className='w-[20%] h-full bg-zinc-100 flex flex-col items-center pt-5'>
         <Link
           className='mt-20 py-4 px-5 border rounded text-white text-xl bg-blue-600 hover:bg-blue-700 transition'
-          to={"/add-products"}
+          to={"/add-products"} // Reset category
           onClick={handleAddProduct}
         >
           Add Products
