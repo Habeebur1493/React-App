@@ -61,8 +61,7 @@ const Login = () => {
             </div>
             <button
               onClick={login}
-              className="w-[40%] md:w[25%] lg:w-[15%] p-4 bg-blue-600 text-white 
-              text-lg md:text-xl lg:text-2xl rounded-xl mt-5 cursor-pointer ml-25"
+              className="w-[40%] md:w[25%] lg:w-[15%] p-4 bg-blue-600 text-white text-2xl rounded-xl mt-5 cursor-pointer"
             >
               Login
             </button>

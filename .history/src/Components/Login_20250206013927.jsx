@@ -46,8 +46,7 @@ const Login = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 type="email"
                 placeholder="Enter your email"
-                className="bg-gray-300 w-full md:w-[75%] lg:w-[60%] border-2 p-4 rounded-xl 
-                text-base md-text-xl lg:text-2xl"
+                className="bg-gray-300 w-full md:w-[75%] lg:w-[60%] border-2 p-4 rounded-xl text-2xl"
               />
             </div>
             <div className="w-full flex justify-center  items-center bg- gray-800 p-2 rounded-xl gap-2">
@@ -55,14 +54,12 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 type="password"
                 placeholder="Enter your password"
-                className="bg-gray-300 w-full md:w-[75%] lg:w-[60%] border-2 p-4 rounded-xl 
-                text-base md-text-xl lg:text-2xl"
+                className="bg-gray-300 w-full md:w-[75%] lg:w-[60%] border-2 p-4 rounded-xl text-2xl"
               />
             </div>
             <button
               onClick={login}
-              className="w-[40%] md:w[25%] lg:w-[15%] p-4 bg-blue-600 text-white 
-              text-lg md:text-xl lg:text-2xl rounded-xl mt-5 cursor-pointer ml-25"
+              className="w-[40%] md:w[25%] lg:w-[15%] p-4 bg-blue-600 text-white text-2xl rounded-xl mt-5 cursor-pointer"
             >
               Login
             </button>
